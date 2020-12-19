@@ -1,29 +1,18 @@
 var images = [], x = -1;
-images[0] = "../web-project/images/image2.jpg";
-images[1] = "../web-project/images/image3.jpg";
-images[2] = "../web-project/images/image4.jpg";
-images[3] = "../web-project/images/image5.jpg";
-images[4] = "../web-project/images/image6.jpg";
-images[5] = "../web-project/images/image7.jpg";
-images[6] = "../web-project/images/image8.jpg";
-images[7] = "../web-project/images/image9.jpg";
-images[8] = "../web-project/images/image10.jpg";
-images[9] = "../web-project/images/image11.jpg";
-images[10] = "../web-project/images/image12.jpg";
-images[11] = "../web-project/images/image13.jpg";
-images[12] = "../web-project/images/image14.jpg";
-images[13] = "../web-project/images/image15.jpg";
-images[14] = "../web-project/images/image16.jpg";
-images[15] = "../web-project/images/image17.jpg";
-images[16] = "../web-project/images/image18.jpg";
-images[17] = "../web-project/images/image19.jpg";
-images[18] = "../web-project/images/image20.jpg";
-images[19] = "../web-project/images/image21.jpg";
-images[20] = "../web-project/images/image22.jpg";
-images[21] = "../web-project/images/image23.jpg";
-images[22] = "../web-project/images/image24.jpg";
-images[23] = "../web-project/images/image25.jpg";
-images[24] = "../web-project/images/image1.jpg";
+images[0] = "../Booking/images/image2.jpg";
+images[1] = "../Booking/images/image3.jpg";
+images[2] = "../Booking/images/image4.jpg";
+images[3] = "../Booking/images/image5.jpg";
+images[4] = "../Booking/images/image6.jpg";
+images[5] = "../Booking/images/image7.jpg";
+images[6] = "../Booking/images/image8.jpg";
+images[7] = "../Booking/images/image9.jpg";
+images[8] = "../Booking/images/image10.jpg";
+images[9] = "../Booking/images/image11.jpg";
+images[10] = "../Booking/images/image12.jpg";
+images[11] = "../Booking/images/image13.jpg";
+images[12] = "../Booking/images/image14.jpg";
+images[13] = "../Booking/images/image1.jpg";
 
 function displayNextImage() {
 

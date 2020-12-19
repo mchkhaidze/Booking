@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 
 <html>
-	<head>      
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="homePage.css">
+		<script src="homePage.js"></script> 
+
 		<title>Logged in</title>
 	</head>
 	<body>
-	  	<p>successfully logged in</p>
+	  	<div id="mySidebar" class="sidebar">
+		 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		 	<h2>Find best offers</h2>
+		 	<form autocomplete="off" method="get">
+		 		<div class="form">
+				  	<div class="dropDown1">
+						<label for="guest">Number of guests</label>
+				  		<select id="guest" name="guest">
+				  			<option value="" selected disabled hidden>Select number of guests</option> 
+					    	<option value="1">1</option>
+					      	<option value="2">2</option>
+					      	<option value="3">3</option>
+					    </select>
+					</div>
+
+					<div class="dates">
+						<div class="date">
+							<label for="from">From</label><br>
+			  				<input type="date" id="from" name="from">
+			  			</div>
+
+			  			<div class="date">
+							<label for="to">To</label><br>
+			  				<input type="date" id="to" name="to">
+		  				</div>
+					</div>
+
+					<div class="autocomplete">
+						<label for="from">Destination</label><br>
+						<input id="myInput" type="text" name="myCountry" placeholder="Where are you going?">
+					</div>
+				</div>
+				<input type="submit" class="search" value="Search">
+
+			</form>
+
+		</div>
+
+	  	<ul id="topnav" class="topnav">
+	  		<li id="srch"><button class="openbtn" onclick="openNav()"><i class="fa fa-search"></i></button></li>
+			<li><a href="#">Sign Up</a></li>
+		  	<li><a href="login.html">Login</a></li>
+		  	<li><a href="#">History</a></li>
+		</ul>
+
 	</body>
  </html>
