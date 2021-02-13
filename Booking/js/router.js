@@ -1,3 +1,14 @@
+// import { bla } from './home.js';
+// import * as Login from import Login from "/modules/login/login.js";
+// import SignUp from "signup.js";
+// import Hotels from "hotels.js";
+// import Hotel from "hotel.js";
+// import History from "history.js";
+// import SignOut from "signout.js";
+header("Access-Control-Allow-Origin: *");
+alert("here");
+// bla();
+
 let routes = {
     '/': () => {
     },
@@ -13,24 +24,18 @@ let routes = {
     },
     'hotels': () => {
     },
-    'hotel/{id}': function() {
+    'hotel/{id}': (id) => {
     },
-    'history': function() {
+    'history': () => {
     },
-    'signout': function() {
+    'signout': () => {
     }
 };
 
 
 let handleRoute = () => {
-    
-    let loc = window.location;
-    if(loc.substr(-1) === '/') {
-        loc.substr(0, loc.length - 1);
-    }
 
-    let current = loc.hash || false;
-    alert(current);
+    let current = window.location.hash || false;
     if (current !== false) {
         current = current.substring(1);
     }
