@@ -16,7 +16,7 @@ let routes = {
         // gettemplate();
         // load();
         alert(1);
-        document.getElementByClassName('container').innerHTML = 'bla';
+        document.getElementsByClassName('container').innerHTML = 'bla';
     },
     'login': () => {
     },
