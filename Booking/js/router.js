@@ -1,11 +1,11 @@
-// import { bla } from './home.js';
+import { bla } from './home.js';
 // import * as Login from import Login from "/modules/login/login.js";
 // import SignUp from "signup.js";
 // import Hotels from "hotels.js";
 // import Hotel from "hotel.js";
 // import History from "history.js";
 // import SignOut from "signout.js";
-header("Access-Control-Allow-Origin: *");
+// header("Access-Control-Allow-Origin: *");
 alert("here");
 // bla();
 
