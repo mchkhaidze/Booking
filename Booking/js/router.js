@@ -6,8 +6,7 @@ import { bla } from './home.js';
 // import History from "history.js";
 // import SignOut from "signout.js";
 // header("Access-Control-Allow-Origin: *");
-alert("here");
-// bla();
+bla();
 
 let routes = {
     '/': () => {
