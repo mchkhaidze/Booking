@@ -70,7 +70,7 @@ function getHotelsTemplate(parsed) {
 
 export function loadHotels() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "/json/hotels.json", true);
+    xhttp.open("GET", "./json/hotels.json", true);
     xhttp.send();
 
     xhttp.onreadystatechange = function() {
