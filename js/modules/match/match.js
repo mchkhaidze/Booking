@@ -1,7 +1,7 @@
-function getHotelsTemplate(parsed) {
+function getMactchedTemplate(parsed) {
     let temp = `
                 <div class="galery">
-                    Gallery
+                    Best Matches
                 </div>
                     
                 <div class="content">
@@ -46,7 +46,7 @@ function getHotelsTemplate(parsed) {
                     <dic class="info">
 
                         <div class="title">
-                            <a href="#hotel/${parsed.hotels[i].id}" class="hotelName">${parsed.hotels[i].name}</a>
+                            <a href="#hotel/${i}" class="hotelName">${parsed.hotels[i].name}</a>
                             <p class="location">${parsed.hotels[i].location}</p>
                         </div>
 
@@ -54,7 +54,7 @@ function getHotelsTemplate(parsed) {
 
                     </dic>
 
-                    <a href="#hotel/${parsed.hotels[i].id}"> 
+                    <a href="#hotel/${i}"> 
                         <img src="images/hotelImg/${parsed.hotels[i].roomImg}">
                     </a>
                 </div>
@@ -68,15 +68,15 @@ function getHotelsTemplate(parsed) {
 }
 
 
-export function loadHotels() {
+export function loadMatches() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "./json/hotels.json", true);
+    xhttp.open("GET", "./json/searchedHotels.json", true);
     xhttp.send();
 
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           var parsed = JSON.parse(this.responseText);
-          document.getElementById("container").innerHTML = getHotelsTemplate(parsed);
+          document.getElementById("container").innerHTML = getMactchedTemplate(parsed);
         }
     }
 }

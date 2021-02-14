@@ -5,7 +5,7 @@ import { loadHotels } from './modules/hotels/hotels.js';
 // import { loadHotel } from './modules/hotel/hotel.js';
 // import { loadHistory } from './modules/history/history.js';
 // import { loadBook } from './modules/book/book.js';
-// import { loadMatches } from './modules/match/match.js';
+import { loadMatches } from './modules/match/match.js';
 
 let routes = {
     '/': () => {
@@ -33,7 +33,7 @@ let routes = {
         // loadBook();
     },
     'search': () => {
-        // loadMatches();
+        loadMatches();
     },
 };
 

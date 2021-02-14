@@ -1,0 +1,43 @@
+{
+	"hotels": [
+		{
+			"id"        : 3,
+			"name"      : "Ritz",
+			"location"  : "Paris",
+			"rating"    : "9.6",
+			"type"      : "Executive Suite",
+			"extraInfo" : [ {"info" : "Located in the heart of Paris"},
+			                {"info" : "Terrace"}
+			              ],
+			"Price"     : "GEL 10,677",
+			"roomImg"   : "ritz2.png"
+		},
+
+		{
+			"id"        : 4,
+			"name"      : "Beverly Hills Hotel",
+			"location"  : "Los Angeles",
+			"rating"    : "9.2",
+			"type"      : "Superior King Room",
+			"extraInfo" : [ {"info" : "Extra-large double bed"},
+			                {"info" : "View of the city"},
+			                {"info" : "Air-conditioned"}
+			              ],
+			"Price"     : "GEL 2,735",
+			"roomImg"   : "bh1.png"
+		},
+
+		{
+			"id"        : 5,
+			"name"      : "Marina Bay Sands",
+			"location"  : "Singapore",
+			"rating"    : "9.0",
+			"type"      : "Deluxe Twin Room",
+			"extraInfo" : [ {"info" : "Top location"},
+			                {"info" : "Garden view"}
+			              ],
+			"Price"     : "GEL 1,342",
+			"roomImg"   : "marinabay1.png"
+		}
+	]
+}
