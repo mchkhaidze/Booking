@@ -227,7 +227,7 @@ input[type="submit"]:active {
 	background-color: rgba(125, 165, 173, 0.5);
 }
 
-.galery {
+.gallery {
 	color: #184a54;
 	padding-top: 20px;
 	text-decoration: none;
@@ -238,7 +238,7 @@ input[type="submit"]:active {
 	text-align: center;
 }
 
-.column {
+.column, .photogallery {
 	margin-top: 40px;
 	opacity: 0;
 	animation: fade 1.5s 1 100ms;
@@ -372,4 +372,71 @@ img {
 
 #log:hover, #sign:hover {
     background-color: white;
+}
+
+.content {
+    padding-bottom: 20px;
+}
+
+table, td, th {
+    border: 1px solid #184a54;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #184a54;
+}
+
+.extraInfo {
+    font-weight: bold;
+}
+
+ul, .extraInfo {
+    font-size: 20px;
+    color: #184a54;;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+div.photogallery:hover {
+    transform: scale(1.02);
+}
+
+div.photogallery img {
+    width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.photos {
+    padding-top: 20px;
+    background-color: rgba(125, 165, 173, 0.5);
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

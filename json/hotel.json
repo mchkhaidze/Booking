@@ -1,0 +1,21 @@
+{
+	"id"        : 3,
+	"name"      : "Ritz",
+	"location"  : "Paris",
+	"rating"    : "9.6",
+	"type"      : "Executive Suite",
+	"extraInfo" : [ {"info" : "Located in the heart of Paris"},
+	                {"info" : "Terrace"},
+	                {"info" : "Extra-large double bed"},
+			        {"info" : "View of the city"},
+			        {"info" : "Breakfast Included"}
+	              ],
+	"Price"     : "GEL 10,677",
+	"roomImgs"  : [ {"img" : "ritz1.png"},
+					{"img" : "ritz2.png"},
+					{"img" : "ritz3.png"},
+					{"img" : "ritz4.png"},
+					{"img" : "ritz5.png"},
+					{"img" : "ritz6.png"}
+	              ]
+}

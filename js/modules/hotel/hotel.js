@@ -1,82 +1,79 @@
-function getHotelsTemplate(parsed) {
+function getHotelTemplate(parsed) {
     let temp = `
-                <div class="galery">
-                    Gallery
-                </div>
-                    
-                <div class="content">
+    			<div class="gallery">
+                	${parsed.name}
+	            </div>
+
+	            <div class="photos">`;
+
+	for(let i = 0; i < parsed.roomImgs.length; i++){
+		temp += `
+					<div class="responsive">
+	                    <div class="photogallery">
+	                        <a href="images/hotelImg/${parsed.roomImgs[i].img}">
+	                            <img src="images/hotelImg/${parsed.roomImgs[i].img}" width="600" height="400">
+	                        </a>
+	                    </div>
+                	</div>`;
+	}
+
+	temp +=	`
+				<div class="clearfix"></div>
+
+	        </div>
+	                
+	        <div class="content">
 
 
-                    <div class="column">
-                `;
+	            <div class="column">
 
-    let i = 0;
-    for (; i < parsed.hotels.length/2; i++) {
-      temp += `
-                <div class="hotel">
-
-                    <dic class="info">
-
-                        <div class="title">
-                            <a href="#hotel/${i}" class="hotelName">${parsed.hotels[i].name}</a>
-                            <p class="location">${parsed.hotels[i].location}</p>
-                        </div>
-
-                        <p class="rating">${parsed.hotels[i].rating}</p>
-
-                    </dic>
-
-                    <a href="#hotel/${i}"> 
-                        <img src="images/hotelImg/${parsed.hotels[i].roomImg}">
-                    </a>
-                </div>
-            `;
-    } 
-
-    temp += `
-            </div>
-            
+	                <table>
+	                  <tr>
+	                    <td>Location</td>
+	                    <td>${parsed.location}</td>
+	                  </tr>
+	                  <tr>
+	                    <td>Room Type</td>
+	                    <td>${parsed.type}</td>
+	                  </tr>
+	                  <tr>
+	                    <td>Price</td>
+	                    <td>${parsed.price}</td>
+	                  </tr>
+	                  <tr>
+	                    <td>Rating</td>
+	                    <td>${parsed.rating}</td>
+	                  </tr>
+	                </table>
+	            </div>
+	        
                 <div class="column">
-            `;
 
-    for (; i < parsed.hotels.length; i++) {
-        temp += `
-                <div class="hotel">
+                    <p class="extraInfo">Extra Information</p>
+                    <ul>`;
 
-                    <dic class="info">
+    for(let j = 0; j < parsed.extraInfo.length; j++){
+		temp += `<li>${parsed.extraInfo[j].info}</li>`;
+	}
 
-                        <div class="title">
-                            <a href="#hotel/${i}" class="hotelName">${parsed.hotels[i].name}</a>
-                            <p class="location">${parsed.hotels[i].location}</p>
-                        </div>
-
-                        <p class="rating">${parsed.hotels[i].rating}</p>
-
-                    </dic>
-
-                    <a href="#hotel/${i}"> 
-                        <img src="images/hotelImg/${parsed.hotels[i].roomImg}">
-                    </a>
-                </div>
-            `;
-    } 
-
-    temp += `</div>
+    temp += `   
+    			</ul>
+            </div>
         </div>`;
 
     return temp;
 }
 
 
-export function loadHotels() {
+export function loadHotel() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "/json/hotels.json", true);
+    xhttp.open("GET", "/json/hotel.json", true);
     xhttp.send();
 
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           var parsed = JSON.parse(this.responseText);
-          document.getElementById("container").innerHTML = getHotelsTemplate(parsed);
+          document.getElementById("container").innerHTML = getHotelTemplate(parsed);
         }
     }
 }

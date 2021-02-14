@@ -1,6 +1,6 @@
 function getMactchedTemplate(parsed) {
     let temp = `
-                <div class="galery">
+                <div class="gallery">
                     Best Matches
                 </div>
                     

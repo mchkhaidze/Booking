@@ -1,6 +1,6 @@
 function getHotelsTemplate(parsed) {
     let temp = `
-                <div class="galery">
+                <div class="gallery">
                     Gallery
                 </div>
                     
