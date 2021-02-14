@@ -1,33 +1,40 @@
-// import { loadHotels } from './modules/home/home.js';
-// import { loadHotels } from './modules/login/login.js';
-// import { loadHotels } from './modules/signup/signup.js';
+// import { loadLogin } from './modules/login/login.js';
+// import { loadSignup } from './modules/signup/signup.js';
+import { loadHome } from './modules/home/home.js';
 import { loadHotels } from './modules/hotels/hotels.js';
-// import { loadHotels } from './modules/hotel/hotel.js';
-// import { loadHotels } from './modules/history/history.js';
-// import { loadHotels } from './modules/signout/signout.js';
+// import { loadHotel } from './modules/hotel/hotel.js';
+// import { loadHistory } from './modules/history/history.js';
+// import { loadBook } from './modules/book/book.js';
+// import { loadMatches } from './modules/match/match.js';
 
 let routes = {
     '/': () => {
+        // loadLogin();
     },
     'home': () => {
-        // getHomeTemplate();
-        // loadHomeData();
-        // document.getElementById('container').innerHTML = 'bla';
+        loadHome();
     },
     'login': () => {
+        // loadLogin();
     },
     'signup': () => {
+        // loadSignup();
     },
     'hotels': () => {
         loadHotels();
     },
     'hotel': (id) => {
-        alert(id);
+        // loadHotel();
     },
     'history': () => {
+        // loadHistory();
     },
-    'signout': () => {
-    }
+    'book': () => {
+        // loadBook();
+    },
+    'search': () => {
+        // loadMatches();
+    },
 };
 
 
