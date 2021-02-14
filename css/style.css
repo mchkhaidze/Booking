@@ -210,7 +210,7 @@ input[type="submit"]:active {
 	cursor: pointer;
 }
 */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 	.content {
 		display: flex;
 		flex-direction: column;
@@ -427,12 +427,24 @@ div.photogallery img {
         width: 49.99999%;
         margin: 6px 0;
     }
+
+    .login, .form {
+		background-color: transparent;
+	}
 }
 
 @media only screen and (max-width: 500px) {
     .responsive {
         width: 100%;
     }
+
+    .login, .form {
+		background-color: transparent;
+	}
+
+	.content {
+		flex-direction: column;
+	}
 }
 
 .clearfix:after {
