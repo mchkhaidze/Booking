@@ -1,4 +1,4 @@
-// import { loadLogin } from './modules/login/login.js';
+import { loadLogin } from './modules/login/login.js';
 // import { loadSignup } from './modules/signup/signup.js';
 import { loadHome } from './modules/home/home.js';
 import { loadHotels } from './modules/hotels/hotels.js';
@@ -9,13 +9,13 @@ import { loadHotels } from './modules/hotels/hotels.js';
 
 let routes = {
     '/': () => {
-        // loadLogin();
+        loadLogin();
     },
     'home': () => {
         loadHome();
     },
     'login': () => {
-        // loadLogin();
+        loadLogin();
     },
     'signup': () => {
         // loadSignup();
@@ -59,6 +59,18 @@ window.onpopstate = () => {
     handleRoute();
 }
 
+let handleClick = (e) => {
+    if (e.target.id === 'ckbox'){
+        let x = document.getElementById("pass");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }      
+    }
+} 
+
 window.addEventListener('locationchange', handleRoute());
 window.addEventListener('hashchange', handleRoute());
 window.addEventListener('load', handleRoute());
+document.addEventListener('click', handleClick);

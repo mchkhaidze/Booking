@@ -1,4 +1,5 @@
 function getHomeTemplate(parsed) {
+	document.getElementById("nav").style.display = "block"; 
     let temp = `
                 <div class="search">
     			
@@ -22,18 +23,18 @@ function getHomeTemplate(parsed) {
 
 						<div class="dates">
 							<div class="date">
-								<label for="from">Check-in</label><br>
+								<label for="from">Check-in</label>
 				  				<input type="date" id="from" name="from">
 				  			</div>
 
 				  			<div class="date">
-								<label for="to">Check-out</label><br>
+								<label for="to">Check-out</label>
 				  				<input type="date" id="to" name="to">
 			  				</div>
 						</div>
 
 						<div class="autocomplete">
-							<label for="from">Destination</label><br>
+							<label for="from">Destination</label>
 							<input id="myInput" type="text" name="myCountry" placeholder="Where are you going?">
 						</div> 
 

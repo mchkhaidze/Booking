@@ -66,6 +66,79 @@
 			              ],
 			"Price"     : "GEL 1,342",
 			"roomImg"   : "marinabay1.png"
+		},
+
+		{
+			"id"        : 6,
+			"name"      : "Hotel Tbilis",
+			"location"  : "Tbilisi",
+			"rating"    : "9.5",
+			"type"      : "Deluxe Twin Room",
+			"extraInfo" : [ {"info" : "Top location"},
+			                {"info" : "Garden view"}
+			              ],
+			"Price"     : "GEL 1,355",
+			"roomImg"   : "bh2.png"},
+
+		{
+			"id"        : 7,
+			"name"      : "New Hotel",
+			"location"  : "New York",
+			"rating"    : "7.8",
+			"type"      : "Double-Bedroom Suite",
+			"extraInfo" : [ {"info" : "Top location"},
+			                {"info" : "Garden view"}
+			              ],
+			"Price"     : "GEL 9,852",
+			"roomImg"   : "bh3.png"},
+
+		{
+			"id"        : 8,
+			"name"      : "Hotel 1",
+			"location"  : "Tokyo",
+			"rating"    : "9.4",
+			"type"      : "Twin Room",
+			"extraInfo" : [ {"info" : "Top location"},
+			                {"info" : "Garden view"}
+			              ],
+			"Price"     : "GEL 5,740",
+			"roomImg"   : "bh4.png"},
+
+		{
+			"id"        : 9,
+			"name"      : "Random Name",
+			"location"  : "Batumi",
+			"rating"    : "9.0",
+			"type"      : "One-Bedroom Suite",
+			"extraInfo" : [ {"info" : "Top location"},
+			                {"info" : "Garden view"}
+			              ],
+			"Price"     : "GEL 1,342",
+			"roomImg"   : "palmscasino2.png"},
+
+		{
+			"id"        : 10,
+			"name"      : "Best Hotel",
+			"location"  : "Bali",
+			"rating"    : "9.9",
+			"type"      : "Single Room",
+			"extraInfo" : [ {"info" : "Top location"},
+			                {"info" : "Garden view"}
+			              ],
+			"Price"     : "GEL 10,500",
+			"roomImg"   : "palmscasino3.png"},
+
+		{
+			"id"        : 11,
+			"name"      : "Hotel Hotel",
+			"location"  : "Spain",
+			"rating"    : "8.6",
+			"type"      : "Deluxe Room",
+			"extraInfo" : [ {"info" : "Top location"},
+			                {"info" : "Garden view"}
+			              ],
+			"Price"     : "GEL 34,442",
+			"roomImg"   : "palmscasino4.png"
 		}
 
 	]
