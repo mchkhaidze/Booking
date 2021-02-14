@@ -67,7 +67,7 @@ function getHotelTemplate(parsed) {
 
 export function loadHotel() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "/json/hotel.json", true);
+    xhttp.open("GET", "./json/hotel.json", true);
     xhttp.send();
 
     xhttp.onreadystatechange = function() {
