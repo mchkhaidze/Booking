@@ -1,0 +1,27 @@
+{
+	"hotels":[
+		{
+			"id"        : 10,
+			"name"      : "Best Hotel",
+			"location"  : "Bali",
+			"rating"    : "9.9",
+			"type"      : "Single Room",
+			"dates" 	: {"startdate" : "10/08/2021",
+				           "enddate"   : "20/08/2021"},
+			"guests"	: 3,
+			"roomImg"   : "palmscasino3.png"
+		},
+
+		{
+			"id"        : 2,
+			"name"      : "Palms Casino Resort",
+			"location"  : "Las Vegas",
+			"rating"    : "8.5",
+			"type"      : "Deluxe One-Bedroom Suite",
+			"dates" 	: {"startdate" : "1/10/2021",
+				           "enddate"   : "7/10/2021"},
+			"guests"	: 2,
+			"roomImg"   : "palmscasino1.png"
+		}
+	]
+}

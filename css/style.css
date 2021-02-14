@@ -3,6 +3,10 @@ html, body {
     height: 100%;
 }
 
+a {
+	text-decoration: none;
+}
+
 .header {
 	display: flex;
 	flex-direction: row;
@@ -416,11 +420,32 @@ div.photogallery img {
     background-color: rgba(125, 165, 173, 0.5);
 }
 
+
+.reserv tr td {
+    border-color: transparent;
+}
+
 .responsive {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
 }
+
+.del {
+    color: red;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.edit {
+    color: grey;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/*.edit:visited {
+	color: red;
+}*/
 
 @media only screen and (max-width: 700px) {
     .responsive {

@@ -1,0 +1,12 @@
+{
+	"id"        : 10,
+	"name"      : "Best Hotel",
+	"location"  : "Bali",
+	"rating"    : "9.9",
+	"type"      : "Single Room",
+	"dates" 	: [ {"startdate" : "10/08/2021"},
+		            {"enddate"   : "20/08/2021"}
+		          ],
+	"guests"	: 3,
+	"roomImg"   : "palmscasino3.png"}
+}

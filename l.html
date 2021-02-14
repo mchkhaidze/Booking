@@ -11,6 +11,19 @@
         <title>Hotel Booking</title>
 
         <style type="text/css">
+
+            .del {
+                color: red;
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+
+            .edit {
+                color: grey;
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+
         </style>
 
     </head>
@@ -35,68 +48,7 @@
         <div class="container" id ="container">
 
             <div class="gallery">
-                ${parsed.name}
-            </div>
-
-            <div class="photos">
-                <div class="responsive">
-                    <div class="photogallery">
-                        <a href="images/hotelImg/ritz3.png">
-                            <img src="images/hotelImg/ritz3.png" width="600" height="400">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="photogallery">
-                        <a href="images/hotelImg/ritz3.png">
-                            <img src="images/hotelImg/ritz3.png" width="600" height="400">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="photogallery">
-                        <a href="images/hotelImg/ritz3.png">
-                            <img src="images/hotelImg/ritz3.png" width="600" height="400">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="photogallery">
-                        <a href="images/hotelImg/ritz3.png">
-                            <img src="images/hotelImg/ritz3.png" width="600" height="400">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="photogallery">
-                        <a href="images/hotelImg/ritz3.png">
-                            <img src="images/hotelImg/ritz3.png" width="600" height="400">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="photogallery">
-                        <a href="images/hotelImg/ritz3.png">
-                            <img src="images/hotelImg/ritz3.png" width="600" height="400">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="responsive">
-                    <div class="photogallery">
-                        <a href="images/hotelImg/ritz3.png">
-                            <img src="images/hotelImg/ritz3.png" width="600" height="400">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="clearfix"></div>
-
+                My Reservations
             </div>
                 
             <div class="content">
@@ -104,36 +56,52 @@
 
                 <div class="column">
 
-                    <table>
-                      <tr>
-                        <td>Location</td>
-                        <td>${parsed.location}</td>
-                      </tr>
-                      <tr>
-                        <td>Room Type</td>
-                        <td>${parsed.type}</td>
-                      </tr>
-                      <tr>
-                        <td>Price</td>
-                        <td>${parsed.price}</td>
-                      </tr>
-                      <tr>
-                        <td>Rating</td>
-                        <td>${parsed.rating}</td>
-                      </tr>
-                    </table>
-                </div>
-        
-                <div class="column">
+                    <div class="hotel">
 
-                    <p class="extraInfo">Extra Information</p>
-                    <ul>
-                        <li>Breakfast included</li>
-                        <li>Wi-Fi</li>
-                    </ul>
+                        <dic class="info">
+
+                            <div class="title">
+                                <a href="#hotel/${parsed.hotels[i].id}" class="hotelName">${parsed.hotels[i].name}</a>
+                                <p class="location">${parsed.hotels[i].location}</p>
+                            </div>
+
+                        </dic>
+
+                        <a href="#hotel/${parsed.hotels[i].id}"> 
+                            <img src="images/hotelImg/${parsed.hotels[i].roomImg}">
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="column">
+                    <div class="hotel">
+
+                        <dic class="info">
+
+                            <div class="title">
+                                <a href="#hotel/${parsed.hotels[i].id}" class="hotelName">${parsed.hotels[i].name}</a>
+                                <p class="location">${parsed.hotels[i].location}</p>
+                            </div>
+
+                        </dic>
+
+                            <a href="#hotel/${parsed.hotels[i].id}"> 
+                            <img src="images/hotelImg/${parsed.hotels[i].roomImg}">
+                            </a>
+                            <p class="extraInfo">Extra Information</p>
+                            <ul>
+                                <li>2 guests</li>
+                                <li>from: 10/10/20</li>
+                                <li>to :12/10/20</li>
+                                <li>single room</li>
+                            </ul>
+                            <a href="#" class="del">Delete</a>
+                            <a href="#book" class="edit">Edit</a>
+                
+                    </div>
                 </div>
             </div>
-             
+         
         </div>
 
         <!-- <script type="module" src="js/router.js"></script> -->

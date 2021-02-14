@@ -3,7 +3,7 @@ import { loadLogin } from './modules/login/login.js';
 import { loadHome } from './modules/home/home.js';
 import { loadHotels } from './modules/hotels/hotels.js';
 import { loadHotel } from './modules/hotel/hotel.js';
-// import { loadHistory } from './modules/history/history.js';
+import { loadHistory } from './modules/history/history.js';
 // import { loadBook } from './modules/book/book.js';
 import { loadMatches } from './modules/match/match.js';
 
@@ -27,7 +27,7 @@ let routes = {
         loadHotel(id);
     },
     'history': () => {
-        // loadHistory();
+        loadHistory();
     },
     'book': () => {
         // loadBook();
